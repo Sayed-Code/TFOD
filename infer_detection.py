@@ -11,13 +11,14 @@ from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as vis_util
 
 MODEL_NAME = 'frozen_inference_graph.pb'
-IMAGE_NAME = 'Austrian_identity_card_-_front_and_back.png'#'UF2013_ps-cn-ist-1_0029_001-1.jpg'
+IMAGE_NAME = 'IoT_And_Smart_Buildings.png'#'UF2013_ps-cn-ist-1_0029_001-1.jpg'
 
 # Get the working folder path
 CWD_PATH = os.getcwd()
 
 PATH_TO_LABELS = os.path.join(CWD_PATH, 'annotations', 'label_map.pbtxt')
 
+#In this case 3 persons 
 NUM_CLASSES = 3
 print('Labels at: {}'.format(PATH_TO_LABELS))
 
