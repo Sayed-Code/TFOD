@@ -181,6 +181,10 @@ def main(_):
       FLAGS.train_dir,
       graph_hook_fn=graph_rewriter_fn)
 
+#Note: Tensorflow beginner's doubts, Tensorflow has some built-in command line flag processing mechanism. 
+#You can define your flag, such as tf.flags.DEFINE_integer ('batch_size', 128,'Number of images to process in a batch.'),
+#and then if you use tf.app.run (), it sets what you define so that you can access the transfer value of your defined flag
+#globally, such as tf.flags.FLAGS.batch_size, where you can Access it anywhere in the code.
 
 if __name__ == '__main__':
   tf.app.run()
